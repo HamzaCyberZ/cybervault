@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'auth_repository.dart';
+import 'auth_provider.dart'; // <--- Yeh import zaroori hai
 
 class AuthScreen extends ConsumerStatefulWidget {
   const AuthScreen({super.key});
