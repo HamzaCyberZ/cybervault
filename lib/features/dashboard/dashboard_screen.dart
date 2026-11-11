@@ -31,12 +31,19 @@ class DashboardScreen extends ConsumerWidget {
           ),
           const Divider(),
           ListTile(
+  leading: const Icon(Icons.warning_amber, color: Colors.orange),
+  title: const Text('Data Breach Checker'),
+  subtitle: const Text('Check if your email was leaked'),
+  trailing: const Icon(Icons.chevron_right),
+  onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const BreachCheckerScreen())),
+),    
+          ListTile(
             leading: const Icon(Icons.key, color: Colors.teal),
             title: const Text('Password Generator'),
             subtitle: const Text('Generate strong, secure passwords'),
             trailing: const Icon(Icons.chevron_right),
             onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const PasswordGeneratorScreen())),
-          ),
+         ),
         ],
       ),
     );
